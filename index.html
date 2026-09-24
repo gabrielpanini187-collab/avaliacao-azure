@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Avaliação de Gerenciamento de Nuvem</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 30px;
+        }
+
+        p, li {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .identificacao {
+            background-color: #eeeeee;
+            padding: 15px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Avaliação de Gerenciamento de Nuvem</h1>
+
+    <div class="identificacao">
+        <p><strong>Nome:</strong> Gabriel Elias De Oliveira Panini</p>
+        <p><strong>RA:</strong> 12428187</p>
+        <p><strong>Curso:</strong> Ciência da Computação</p>
+    </div>
+
+    <h2>Questão 3 - Como configurar e conectar em uma máquina virtual na Azure</h2>
+
+    <p>
+        Para configurar e conectar em uma máquina virtual na Microsoft Azure,
+        uma pessoa que nunca utilizou a plataforma pode seguir os seguintes passos:
+    </p>
+
+    <h3>1. Acessar o portal da Azure</h3>
+
+    <p>
+        Primeiramente, deve-se acessar o portal da Microsoft Azure pelo navegador
+        e entrar com uma conta Microsoft que tenha acesso à Azure.
+    </p>
+
+    <h3>2. Criar uma máquina virtual</h3>
+
+    <p>
+        No portal da Azure, deve-se procurar pela opção "Máquinas Virtuais"
+        e selecionar a opção para criar uma nova máquina virtual.
+    </p>
+
+    <h3>3. Configurar as informações básicas</h3>
+
+    <p>
+        Durante a criação, é necessário informar alguns dados, como:
+    </p>
+
+    <ul>
+        <li>Assinatura utilizada;</li>
+        <li>Grupo de recursos;</li>
+        <li>Nome da máquina virtual;</li>
+        <li>Região onde a máquina será criada;</li>
+        <li>Imagem do sistema operacional;</li>
+        <li>Tamanho da máquina virtual.</li>
+    </ul>
+
+    <h3>4. Configurar o usuário e a senha</h3>
+
+    <p>
+        Também é necessário criar as credenciais que serão utilizadas para acessar
+        a máquina virtual. No caso de uma máquina Windows, pode ser configurado
+        um nome de usuário e uma senha. No caso de Linux, normalmente pode ser
+        utilizado um usuário e uma chave SSH.
+    </p>
+
+    <h3>5. Configurar as regras de rede</h3>
+
+    <p>
+        A Azure permite configurar as portas de rede que poderão receber conexões.
+        Para uma máquina Windows, normalmente é necessário permitir a porta RDP
+        (3389). Para uma máquina Linux, normalmente é utilizada a porta SSH (22).
+    </p>
+
+    <h3>6. Criar a máquina virtual</h3>
+
+    <p>
+        Depois de revisar as configurações, deve-se selecionar "Revisar + criar".
+        Após a validação das configurações, deve-se clicar em "Criar".
+        A Azure então começará a criar os recursos necessários para a máquina virtual.
+    </p>
+
+    <h3>7. Aguardar a implantação</h3>
+
+    <p>
+        É necessário aguardar até que a implantação seja concluída.
+        Quando a máquina virtual estiver pronta, ela aparecerá no portal
+        da Azure como uma máquina virtual disponível.
+    </p>
+
+    <h3>8. Localizar o endereço IP</h3>
+
+    <p>
+        Ao abrir a página da máquina virtual criada, é possível encontrar
+        o endereço IP público. Esse endereço será utilizado para realizar
+        a conexão com a máquina.
+    </p>
+
+    <h3>9. Conectar em uma máquina Windows</h3>
+
+    <p>
+        Se a máquina virtual criada utilizar Windows, pode-se utilizar o
+        protocolo RDP (Remote Desktop Protocol). No computador local,
+        pode-se abrir o aplicativo "Conexão de Área de Trabalho Remota",
+        informar o endereço IP público da máquina virtual e realizar a
+        conexão utilizando o usuário e a senha configurados anteriormente.
+    </p>
+
+    <h3>10. Conectar em uma máquina Linux</h3>
+
+    <p>
+        Se a máquina virtual utilizar Linux, normalmente a conexão é realizada
+        utilizando SSH. No Windows, por exemplo, pode-se utilizar o PowerShell
+        ou outro programa compatível com SSH.
+    </p>
+
+    <p>
+        O comando terá uma estrutura semelhante a:
+    </p>
+
+    <p>
+        <strong>ssh usuario@IP_DA_MAQUINA</strong>
+    </p>
+
+    <h3>11. Acessar a máquina virtual</h3>
+
+    <p>
+        Após a autenticação ser realizada com sucesso, o usuário estará
+        conectado à máquina virtual e poderá utilizá-la como se estivesse
+        trabalhando diretamente nela.
+    </p>
+
+    <h3>12. Encerrar a máquina quando não estiver utilizando</h3>
+
+    <p>
+        Depois de terminar os testes ou atividades, é importante verificar
+        a máquina virtual no portal da Azure e, quando apropriado, interrompê-la
+        ou excluí-la. Isso evita que recursos continuem sendo utilizados
+        desnecessariamente e ajuda a controlar os custos da conta.
+    </p>
+
+</div>
+
+</body>
+</html>
